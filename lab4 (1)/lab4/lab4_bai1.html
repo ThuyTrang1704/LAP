@@ -129,8 +129,8 @@
            	<td><input type="date" name="nmBirthDate"  /></td>
             </tr>
             <tr><td>Giới Tính</td>
-              <td> <input type="checkbox" name ="nmgioitinh" > Nam  <br>
-                  <input type="checkbox" name ="nmgioitinh" > Nữ  
+              <td> <input type="radio" name ="nmgioitinh" value="nam" > Nam  <br>
+                  <input type="radio" name ="nmgioitinh" value="nư" > Nữ  
               
               </td>
               
@@ -160,6 +160,25 @@
             </tr>
             <tr><td>Trả lời</td>
            	<td><input type="text" name="nmPrivateAnswer" size="50"/></td>
+            </tr>
+            <tr>
+                <td>Bạn đang quan tâm đến sản phẩm nào?</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td >
+                                <input type="checkbox" name="nmFields[]" value="dienthoai">Điện thoại<br>
+                                <input type="checkbox" name="nmFields[]" value="tablet">Tablet<br>
+                                <input type="checkbox" name="nmFields[]" value="vitinh">Vi tính<br>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="nmFields[]" value="mayanh">Máy ảnh - quay phim<br>
+                                <input type="checkbox" name="nmFields[]" value="dientu">Điện tử<br>
+                                <input type="checkbox" name="nmFields[]" value="giadung">Gia dụng<br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
             <tr>
               <td colspan="2" align="center"><br/><input type="submit" name="nmSubmit" value="Đăng ký" /> 
